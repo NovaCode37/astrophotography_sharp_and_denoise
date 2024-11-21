@@ -6,7 +6,6 @@ from PIL import Image
 from scipy.ndimage import median_filter
 
 def reduce_noise(image_path, output_path, method='median', sigma=3.0, weight=0.1):
-    """Reduces noise in an astronomical image (TIFF or FITS)."""
     try:                                            
         if image_path.lower().endswith(('.fit', '.fits')):
             with fits.open(image_path) as hdul:
