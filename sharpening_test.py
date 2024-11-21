@@ -5,9 +5,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def sharpen_image(image_array, strength=1.0, radius=1.0):
-    """
-    Sharpens an image using unsharp masking.  Handles different data types more robustly.
-    """
     image_array = image_array.astype(np.float32)
     blurred = cv2.GaussianBlur(image_array, (0, 0), radius)
     sharpened = cv2.addWeighted(image_array, 1 + strength, blurred, -strength, 0)
