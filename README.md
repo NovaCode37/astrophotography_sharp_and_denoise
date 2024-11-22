@@ -7,4 +7,4 @@ Sharpening uses unsharp(blur) mask, denoise uses 3 methods: tv_chambolle(change 
 Select your input path(click to browse input);
 Select your output path(click to browse output):
 Change weight, sigma settings for denoise and strength and radius for sharp;
-After after a little time you get the result.
+After a little time you get the result.
